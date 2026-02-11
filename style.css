@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Dancing Script', cursive;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    background:linear-gradient(135deg,#fd419f,#ff6fb5,#ff4fa3);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    text-align:center;
+}
+
+.container{
+    z-index:2;
+    width:90%;
+    max-width:800px;
+}
+
+h1{
+    font-size:60px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+h2{
+    margin-top:15px;
+    font-weight:300;
+    font-size:24px;
+}
+
+#message{
+    margin-top:30px;
+    font-size:20px;
+    line-height:1.6;
+    min-height:150px;
+    white-space:pre-line;
+}
+
+button{
+    margin-top:30px;
+    padding:15px 35px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    background:#ff4e88;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    background:#ff2e6e;
+}
+
+@keyframes glow{
+    from{text-shadow:0 0 10px #ff4e88,0 0 20px #ff4e88;}
+    to{text-shadow:0 0 20px #ffd6e8,0 0 30px #ffd6e8;}
+}
+
+/* Confetti */
+
+@keyframes fall{
+    to{transform:translateY(110vh) rotate(720deg);}
+}
+
+/* Heart animation */
+.heart{
+    position:absolute;
+    bottom:-120px;
+    animation: floatUp linear infinite;
+    opacity:0.95;
+}
+
+/* Ảnh tự xoay */
+.heart img{
+    width:50px;
+    animation: spin 4s linear infinite;
+}
+
+/* Bay lên */
+@keyframes floatUp{
+    0%{
+        transform: translate(-50%, 0);
+        opacity:1;
+    }
+    100%{
+        transform: translate(-50%, -120vh);
+        opacity:0;
+    }
+}
+
+/* Xoay tại chỗ */
+@keyframes spin{
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+}
+
+.cake-fly{
+    position:absolute;
+    bottom:-120px;
+    animation: floatUp linear infinite;
+    opacity:0.95;
+}
+
+.cake-fly img{
+    width:80px;
+    animation: spin 6s linear infinite;
+}
+
+
