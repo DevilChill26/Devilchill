@@ -1,7 +1,7 @@
 // ===== LỜI CHÚC (bạn sửa phần này) =====
 const messageText = `
-❤️ Happy Birthday Em Nhoaa ❤️
-Chúc Em tuổi mới luôn vui vẻ, hạnh phúc, luôn xinh đẹp
+❤️ Happy Birthday Kiw Thư Nhoaa ❤️
+Bi chúc em tuổi mới luôn vui vẻ, hạnh phúc, luôn xinh đẹp
 và gặp thật nhiều may mắn trong cuộc sống.
 Mong mọi điều ước của em sẽ sớm trở thành hiện thực.
 ❤️ Happy Birthday ❤️
@@ -70,7 +70,7 @@ function startParty(){
     document.getElementById("music").play();
     typeMessage(messageText, "message");
     setInterval(createHearts, 800);
-    setInterval(createCakes, 2000);
+    setInterval(createCakes, 800);
 
     // khóa nút
     const btn = document.querySelector("button");
